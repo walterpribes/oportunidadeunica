@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegue Seu Desconto!</title>
+    <!-- Carregando o Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Adicionando a fonte Arial como principal, conforme solicitado */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Animação de pulsação para o botão */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.4);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0px 8px 25px rgba(0, 255, 0, 0.6);
+            }
+        }
+
+        .animate-pulse-custom {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#1A2B1A] text-white">
+
+    <!-- Seção 1: Título Principal -->
+    <header class="bg-[#1A2B1A] text-center py-5">
+        <h1 class="text-2xl font-bold">
+            Pegue Seu Desconto Aqui!
+        </h1>
+    </header>
+
+    <!-- Seção Principal: Imagem e Botão CTA -->
+    <main class="container mx-auto p-6 md:p-10 flex items-center">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full gap-8 md:gap-12">
+
+            <!-- Seção 2: Imagem do Curso (Lado Esquerdo) -->
+            <div class="w-[70%] md:w-2/5 flex-shrink-0">
+                <img 
+                    src="https://i.postimg.cc/pLKskjXM/Curso-Zerando-o-drop-5.webp" 
+                    alt="Imagem do Curso" 
+                    class="rounded-lg shadow-lg w-full h-auto object-cover"
+                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Imagem+Indisponível';"
+                >
+            </div>
+
+            <!-- Seção 3: Botão CTA (Lado Direito) -->
+            <div class="w-full md:w-1/2 flex flex-col items-center justify-center text-center">
+                 <p class="text-gray-300 text-lg mb-6">
+                    Clique no botão abaixo para garantir sua oferta exclusiva e começar a aprender hoje mesmo!
+                </p>
+                <a 
+                    href="#" 
+                    class="
+                        w-full 
+                        bg-[#00FF00] 
+                        text-[#1A2B1A]
+                        font-bold 
+                        uppercase 
+                        text-base 
+                        py-3 
+                        px-6
+                        rounded-lg 
+                        transition-all 
+                        duration-300
+                        transform 
+                        hover:bg-[#00CC00]
+                        hover:shadow-[0px_6px_15px_rgba(0,255,0,0.5)]
+                        hover:scale-105
+                        focus:outline-none 
+                        focus:ring-2 
+                        focus:ring-offset-2
+                        focus:ring-offset-[#1A2B1A]
+                        focus:ring-[#00FF00]
+                        animate-pulse-custom
+                    "
+                >
+                    Pegue seu desconto aqui
+                </a>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Rodapé adaptado para o novo design -->
+    <footer class="text-center p-4 mt-10">
+        <p class="text-gray-400 text-sm">&copy; 2024 oportunidade única. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
